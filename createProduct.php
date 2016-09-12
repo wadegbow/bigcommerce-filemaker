@@ -52,7 +52,7 @@ if (isset($_POST)) {
 
 		$i = 0;
 		foreach ($filenames as $filename) {
-			$url = "http://35.9.51.36/lister_images/RC_Data_FMS/Lister_Images/lister_images/".$filename;
+			$url = "lister_images/".$filename;
 			$image = new ProductImage();
 			$image->product_id = $product_id;
 			$image->image_file = $url;
